@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MATHS DOJO</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='game.css'>
+    <link rel="stylesheet" href="media.css">
+    <script src='game.js'></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+</head>
+
+<body onload="oprandgen()">
+    <div class="header">
+        <div class="header-container">
+            <h1> MATHS DOJO</h1>
+        </div>
+    </div>
+    <!-- importance of maths  -->
+    <div class="imp">
+        <p>People who excel at mathematics use better strategies than the rest of us, they don’t necessarily have better
+            brains. We teach here simple vedic mathematics strategies that can help you do many maths calculations in
+            your head, doing mental long division, even squaring and finding square roots of numbers off the top of your
+            head.</p>
+    </div>
+    <!-- byline  -->
+    <div class="byline">
+        <h2>Let's take a quick Test</h2>
+    </div>
+    <!-- test begins  -->
+    <div class="start-btn">
+        <button id="startBtn" onclick="clock(); document.getElementById('demo4').innerHTML='1';">Start Test</button>
+    </div>
+    <div class="eqn-box">
+        <div class="eqn-container">
+            <div class="eqn-element">
+                <p id="demo2"></p>
+            </div>
+            <div class="eqn-element">
+                <p id="demo"></p>
+            </div>
+            <div class="eqn-element">
+                <p id="demo3"></p>
+            </div>
+        </div>
+    </div>
+    <div class="user-ans">
+        <form>
+            <!-- <label for="UserIp">Enter your Answer : </label> -->
+            <input type="text" id="UserIp" placeholder="Enter your answer here..." disabled>
+        </form>
+    </div>
+
+    <div class="cal-btn">
+        <button id="calcuBtn" onclick="checkAns()">Calculate</button>
+    </div>
+    <!-- main body  -->
+    <div id="myDIV">
+        <div class="vcont">
+            <div class="reason">
+                <h2>Reasons for Slow Calculation</h2>
+                <div class="rcont">
+                    <p>Slow learning students compete with children with low cognitive abilities in understanding basic
+                        knowledge taught by teachers . Ability to count is part of the cognitive abilities possessed by
+                        children. Meanwhile the slow learning children have low cognitive abilities so that they have
+                        difficulty in calculating. They have low attention, low level of understanding,low level of
+                        estimation, and low information processing, and they also have difficulty in solving problems.
+                        Slow learning students usually follow the learning process in school using learning material
+                        that is appropriate to their abilities provided by the teacher. Slow learning students usually
+                        experience weaknesses in calculation lessons. Counting is part of math. Counting is a process of
+                        summing, subtracting, multiplying, and dividing the numbers used in accordance with the
+                        prescribed procedures.
+                    </p>
+                    <p>International Journal of Multicultural and Multireligio us Understanding,February 2019 Analysis
+                        of Mathematical Calculation Skill on Slow Learning Students in Inclusive School. Counting
+                        ability in children is the child's initial ability to gain knowledge about addition,
+                        subtraction, multiplication, and distribution of real numbers in accordance with predetermined
+                        rules. Ability to count is needed in all human lives.The ability to count is useful for
+                        developing basic knowledge of mathematics in children so that they are better prepared to follow
+                        further mathematics learning.
+                    </p><br>
+                    <br>
+                    <h2> Here are some Vedic Mathematics Techniques to Speed up your Calculations...</h2>
+                    <!-- vedic mathematics Techniques start here  -->
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <p>Squaring Of A Number Whose Unit Digit Is 5</p>
+                <p>With this Vedic Math trick, you can quickly find the square of a two-digit number ending with 5.</p>
+                <p>CBSE or ICSE-whatever syllabus you follow, you will definitely come across such sums.</p>
+                <p>For example Find (55) ² =?</p>
+                <p>Step 1. 55 x 55 = . . 25 (end terms)</p>
+                <p>Step 2. 5x (5+1) = 30</p>
+                <p>So our answer will be 3025.</p>
+            </div>
+
+            <div class="mySlides fade">
+                <p>Multiply a Number By 5</p>
+                <p>Even Number:</p>
+                <p>2464 x 5 =?</p>
+                <p>Step 1. 2464 / 2 = 1232</p>
+                <p>Step 2. add 0</p>
+                <p>The answer will be 2464 x 5 = 12320</p>
+                <p>Odd Number:</p>
+                <p>3775 x 5</p>
+                <p>Step 1. Odd number; so ( 3775 - 1) / 2 = 1887</p>
+                <p>Step 2. As it is an odd number, so instead of 0 we will put 5</p>
+                <p>The answer will be 3775 x 5 = 18875</p>
+            </div>
+
+            <div class="mySlides fade">
+                <p>Subtraction From 1000, 10000, 100000</p>
+                <p>For example:</p>
+                <p>1000 – 573 =? (Subtraction from 1000)</p>
+                <p>We simply subtract each figure in 573 from 9 and then subtract the last figure from 10.</p>
+                <p>Step 1. 9 – 5 = 4</p>
+                <p>Step 2. 9 – 7 = 2</p>
+                <p>Step 3. 10 – 3 = 7</p>
+                <p>So, the answer is: (1000 – 573) = 427</p>
+            </div>
+
+            <div class="mySlides fade">
+                <p>Addition</p>
+                <p>(1) Find out the number which is closest to the 10s multiple because it is easier to add those
+                    numbers. For example,</p>
+                <p>7, 8, 9 close to 10</p>
+                <p>21, 22, 23 close to 20</p>
+                <p>67, 68, 69, are close to 70</p>
+                <p>97, 98, 99, are close to 100 ....... and so on.</p>
+                <p>(2) Add the numbers which are the multiples of 10</p>
+                <p>(3) Add/Subtract the deficiency of numbers.</p>
+                <p>Let’s understand with the help of an example.</p>
+                <p>Suppose, we have to add 27 and 98.</p>
+                <p>So, Vedic maths tells us to add 30 and 100 which is 130 and then subtract (3+2) i.e. the deficiency
+                    from 130. So the result will be 125.</p>
+            </div>
+
+            <div class="mySlides fade">
+                <p>Multiplication Of Any 3-digit Numbers</p>
+                <p>Step 1. Now subtract the unit place digit from the actual number.</p>
+                <p>308-8=300</p>
+                <p>306-6=300</p>
+                <p>Step 2. Now select any (1st or 2nd) number and add the unit digit of the other number</p>
+                <p>308+6=314</p>
+                <p>Step 3. Now we will multiply the product we got in step 2 and step 1; 314×300 = 94200</p>
+                <p>Step 4. Unit digits of both the numbers are 8 & 6. The product of these 2 numbers: 8×6=48</p>
+                <p>Step 5. Last step: 94200 + 48 = 94248</p>
+                <p>So our final answer 306 x 308 = 306 is 94248</p>
+            </div>
+
+            <div class="mySlides fade">
+                <p>Finding The Square Value</p>
+                <p>(99) ² =?</p>
+                <p>Step 1. Choose 100 as base</p>
+                <p>Step 2. Difference: 99-100 = -1</p>
+                <p>Step 3. Add the number with the difference that you got in Step 2 = 99 + (-1) = 98</p>
+                <p>Step 4. Multiplying result with base = 98*100 = 9800</p>
+                <p>Step 5. Now, add result with the square of the difference= 9800 + (-1)² = 9801</p>
+                <p>So our answer is : (99) ² = 9801</p>
+            </div>
+
+            <div class="mySlides fade">
+                <p>For dividing large numbers by number greater than 10. For example 3784 divided by 12.</p>
+                <p>Step 1: Write the negative of the last number of the divisor under the dividend.</p>
+                <p>12</p>
+                <p>-2</p>
+                <p>Step 2: Separate the last digit of the dividend from the rest to calculate the remainder.</p>
+                <p>378 4</p>
+                <p>Step 3: Multiply the first digit with the above result i.e., -2.</p>
+                <p>3 x (-2) = -6</p>
+                <p>Step 4: Add the second digit with the result and continue till the last.</p>
+                <p>378 4 = 3 (7-6) 8 4 = 31 (8-2) 4 = 316 (4-12) = 315 (14 – 10)</p>
+                <p>Result: Quotient = 315 and Remainder = 4</p>
+            </div>
+        </div>
+        <!-- second game starts here  -->
+        <main>
+            <div id="container">
+                <p id="message" class="structure-elements"></p>
+                <aside id="score" class="structure-elements">Score: <span>00</span></aside>
+
+                <div id="calculation">
+                    <section id="question" class="structure-elements"></section>
+                    <p id="instruction" class="structure-elements">Click on the correct answer</p>
+                    <ul id="choices" class="structure-elements">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <button id="start-reset" class="structure-elements">Start Game</button>
+                <aside id="time-remaining" class="structure-elements">Time remaining: <span>60</span> sec</aside>
+            </div>
+            <div id="game-over" class="structure-elements">
+                <p>Game over!</p>
+                <p>Your score is <span>00</span>.</p>
+            </div>
+        </main>
+    </div>
+    <!-- footer  -->
+    <div class="footer" id="contact">
+        <div class="footer-container">
+            <div class="Footer-Elements">
+                <h2>Let's stay Connected</h2>
+            </div>
+        </div>
+        <div class="Logo-Container">
+            <div class="Footer-Logos">
+                <div class="Footer-logo">
+                    <a href="https://github.com/abhinav12890" target="blank"><i class="fab fa-autoprefixer"></i></a>
+                </div>
+                <div class="Footer-logo">
+                    <a href="https://github.com/welcometochillis" target="blank2"><i class="fab fa-dyalog"></i></a>
+                </div>
+                <div class="Footer-logo">
+                    <a href="https://github.com/Joydasavage" target="blank3"><i class="fab fa-js-square"></i></a>
+                </div>
+                <div class="Footer-logo">
+                    <a href="https://github.com/sukrjha2" target="blank4"><i class="fab fa-stripe-s"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="Footer-CopyRight">
+            <h5>Copyright &#169 All Rights Reserved | MariodaSavage </h5>
+        </div>
+    </div>
+</body>
+
+</html>

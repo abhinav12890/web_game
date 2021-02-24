@@ -1,0 +1,20 @@
+
+@media screen and (max-width: 900px) {
+    
+    .vcont{
+        display: block;
+        /* overflow: hidden; */
+        word-wrap: break-word;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+    
+    .vcont >.reason{
+        display: flex;
+        flex-direction: column;
+    } 
+    .vcont >.reason >.rcont{
+        text-align: center;
+    }
+  }

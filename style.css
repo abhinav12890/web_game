@@ -1,0 +1,267 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display : flex;
+    height: 120px;
+    background-image: linear-gradient(to right,black, purple);
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+}
+.header-container{
+    text-align: center;
+    height: 100px;
+    width: 300px;
+    margin: auto;
+}
+.byline{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    /* color: rgb(102, 102, 102); */
+    color: purple;
+    font-family: 'Ubuntu', sans-serif;
+}
+.imp p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color:#999;
+    text-align: center;
+    word-break: normal;
+
+}
+.start-btn{
+    margin-bottom: 30px;
+    text-align: center;
+}
+#startBtn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:purple;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+#calcuBtn{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:purple;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+button:hover {background-color:purple}
+  
+button:active {
+    background-color:rgb(182, 53, 182);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.eqn-box{
+    display: flex;
+    align-items: center;
+
+}
+.eqn-container{
+    display: flex;
+    width: 200px;
+    /* border: 2px solid black; */
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+
+}
+.eqn-element{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    color:#999;
+    text-shadow: 2px 2px #666;
+}
+.user-ans{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+#UserIp{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid purple;
+}
+.cal-btn{
+    text-align: center;
+    margin-top: 30px;
+}
+#myDIV{
+    margin-top: 50px;
+    transition:smooth;
+    display: none;
+}
+
+.vcont{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right,black, purple);
+    color: white;
+    height: 800px;
+}
+
+.vcont >.reason{
+    margin-top: 30px;
+}
+.vcont >.reason >.rcont{
+    word-break: normal;
+    text-align: center;
+}
+.vcont >.reason >.rcont p{
+    word-break: normal;
+}
+.vcont >.reason >.rcont h2{
+    word-break: normal;
+}
+.mySlides{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+
+}
+.mySlides p{
+    word-break: normal;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+}
+
+.footer > .footer-container{
+    display: flex;
+    /* border-top: 2px solid rgb(140, 0, 255); */
+    background-image: linear-gradient(to left,black, purple);
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+}
+
+.footer > .footer-container > .Footer-Elements{
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 700px; */
+    /* border: 2px solid greenyellow; */
+}
+
+.footer > .footer-container > .Footer-Elements a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer > .footer-container > .Footer-Elements a:hover{
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(140, 0, 255);
+}
+
+.footer > .footer-container > .Footer-Elements:hover{
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(140, 0, 255);
+}
+
+.footer > .Logo-Container{
+    display: flex;
+    background-image: linear-gradient(to left,black, purple);
+}
+
+.footer > .Logo-Container > .Footer-Logos{
+    display: flex;
+    width: 300px;
+    /* border: 2px solid greenyellow; */
+    font-size: 1.5rem;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer > .Logo-Container > .Footer-Logos i{
+    color: white;
+}
+
+.footer > .Logo-Container > .Footer-Logos i:hover{
+    display: flex;
+    /* border: 2px solid greenyellow; */
+    font-size: 1.5rem;
+    justify-content: space-between;
+    color: rgb(140, 0, 255);
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer > .Footer-Logos > .Footer-logo{
+    display: flex;
+}
+
+.footer > .Footer-CopyRight{
+    display: flex;
+    background-image: linear-gradient(to left,black, purple);
+    color: white;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.footer > .Footer-CopyRight h5{
+   text-align: center;
+   font-family: 'Josefin Sans', sans-serif;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.footer > .Footer-CopyRight h5:hover{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    color:rgb(140, 0, 255);
+ }
